@@ -10,95 +10,30 @@ body {
   background-color: #333;
 }
 
-#chess-board {
-  width: 80%;
-  max-width: 800px;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  top: 5%;
+table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
 }
 
-.dummy-img {
-  display: block;
-  max-width: 100%;
-  opacity: 0;
+td {
+    width: 12.5%;
+    padding-bottom: 12.5%;
 }
 
-.row {
-  width: 100%;
-}
-
-.row:nth-of-type(1) {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-}
-
-.row:nth-of-type(2) {
-  position: absolute;
-  left: 0%;
-  top: 12.5%;
-}
-
-.row:nth-of-type(3) {
-  position: absolute;
-  left: 0%;
-  top: 25%;
-}
-
-
-.row:nth-of-type(4) {
-  position: absolute;
-  left: 0%;
-  top: 37.5%;
-}
-
-
-.row:nth-of-type(5) {
-  position: absolute;
-  left: 0%;
-  top: 50%;
-}
-
-
-.row:nth-of-type(6) {
-  position: absolute;
-  left: 0%;
-  top: 62.5%;
-}
-
-.row:nth-of-type(7) {
-  position: absolute;
-  left: 0%;
-  top: 75%;
-}
-
-.row:nth-of-type(8) {
-  position: absolute;
-  left: 0%;
-  top: 87.5%;
-}
-
-.block {
-  width: 12.5%;
-  height: 12.5%;
-  float: left;
-}
-
-.row:nth-of-type(odd) .block:nth-of-type(odd) {
+tr:nth-of-type(odd) td:nth-of-type(odd) {
   background-color: #FFFACD;
 }
 
-.row:nth-of-type(odd) .block:nth-of-type(even) {
+tr:nth-of-type(odd) td:nth-of-type(even) {
   background-color: #6B8E23;
 }
 
-.row:nth-of-type(even) .block:nth-of-type(odd) {
+tr:nth-of-type(even) td:nth-of-type(odd) {
   background-color: #6B8E23;
 }
 
-.row:nth-of-type(even) .block:nth-of-type(even) {
+tr:nth-of-type(even) td:nth-of-type(even) {
   background-color: #FFFACD;
 }
 
